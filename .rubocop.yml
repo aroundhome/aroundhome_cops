@@ -32,3 +32,9 @@ Performance/Casecmp:
 # Not safe in a rails context, since Relation.count is != Enumerable.count
 Performance/Count:
   Enabled: false
+
+# Encoding comments are not neccessary in all 2.x versions of ruby, since
+# UTF-8 has become the default encoding.
+Style/Encoding:
+  EnforcedStyle: never
+  Enabled: true
