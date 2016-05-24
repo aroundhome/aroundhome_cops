@@ -19,6 +19,8 @@ Style/Encoding:
 Style/FrozenStringLiteralComment:
   EnforcedStyle: always
 
+Style/ModuleFunction:
+  Enabled: false
 # While it is very often useful to separate numbers after every three digits
 # for readability, this mostly doesn't make sense if the number doesn't
 # represent an amount but rather an identifier. Thus the use of underscores
