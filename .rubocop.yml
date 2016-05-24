@@ -19,6 +19,9 @@ Style/Encoding:
 Style/FrozenStringLiteralComment:
   EnforcedStyle: always
 
+# This cop tries to make you use module_funtion instead of extend self
+# This is bad because both have their own use-case and should not be used
+# and sometimes cannot be used to do the same thing
 Style/ModuleFunction:
   Enabled: false
 # While it is very often useful to separate numbers after every three digits
