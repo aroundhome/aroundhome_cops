@@ -15,7 +15,9 @@ Style/Documentation:
 Style/Encoding:
   EnforcedStyle: never
   Enabled: true
-  
+  Exclude:
+    - '*.gemspec'
+
 # This cop tries to make you use module_funtion instead of extend self
 # This is bad because both have their own use-case and should not be used
 # and sometimes cannot be used to do the same thing
