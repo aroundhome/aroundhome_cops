@@ -3,6 +3,7 @@ AllCops:
   Exclude:
     - 'db/schema.rb'
     - 'doc/**/*'
+    - 'docker_app/**/*'
 
 Style/AsciiComments:
   Enabled: false
