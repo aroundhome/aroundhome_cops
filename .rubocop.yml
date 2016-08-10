@@ -23,6 +23,9 @@ Style/Encoding:
   Exclude:
     - '*.gemspec'
 
+# Ruby 2.3 introduced optional automatic freezing of string literals
+# This might become default in future versions.
+# For details on this feature see the internet, e.g. https://wyeworks.com/blog/2015/12/1/immutable-strings-in-ruby-2-dot-3
 Style/FrozenStringLiteralComment:
   EnforcedStyle: always
 
@@ -31,6 +34,7 @@ Style/FrozenStringLiteralComment:
 # and sometimes cannot be used to do the same thing
 Style/ModuleFunction:
   Enabled: false
+
 # While it is very often useful to separate numbers after every three digits
 # for readability, this mostly doesn't make sense if the number doesn't
 # represent an amount but rather an identifier. Thus the use of underscores
@@ -51,7 +55,7 @@ Performance/Casecmp:
 Performance/Count:
   Enabled: false
 
-# Does not make sense when dealing with non-ActiveRecord like mongoid. that
+# Does not make sense when dealing with non-ActiveRecord like mongoid. That
 # Mongoid for example throws error if find_by returns nothing (but we expect
 # nil)
 Rails/FindBy:
