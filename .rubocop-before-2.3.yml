@@ -3,7 +3,6 @@
 # rules to the copy in your project folder.
 
 AllCops:
-  TargetRubyVersion: 2.2
   Exclude:
     - 'db/schema.rb'
     - 'doc/**/*'
@@ -28,7 +27,7 @@ Style/Encoding:
 # and sometimes cannot be used to do the same thing
 Style/ModuleFunction:
   Enabled: false
-  
+
 # While it is very often useful to separate numbers after every three digits
 # for readability, this mostly doesn't make sense if the number doesn't
 # represent an amount but rather an identifier. Thus the use of underscores
