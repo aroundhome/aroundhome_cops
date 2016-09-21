@@ -4,9 +4,13 @@
 
 AllCops:
   Exclude:
+    - 'bin/**/*'
     - 'db/schema.rb'
     - 'doc/**/*'
     - 'docker_app/**/*'
+    - 'Guardfile'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
 
 Style/AsciiComments:
   Enabled: false
