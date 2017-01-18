@@ -12,6 +12,17 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/**/*'
 
+# We need to configure exemptions for blocks that we generally accept to be
+# long, since they are less comparable to methods and more comparable to
+# modules/classes.
+Metrics/BlockLength:
+  ExcludedMethods:
+    - describe
+    - namespace
+  Exclude:
+    - 'config/environments/*.rb' # instead of excluding all :configure methods
+    - 'config/routes.rb'
+
 Style/AsciiComments:
   Enabled: false
 
