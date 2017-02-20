@@ -17,6 +17,7 @@ AllCops:
 # modules/classes.
 Metrics/BlockLength:
   ExcludedMethods:
+    - context
     - describe
     - namespace
   Exclude:
