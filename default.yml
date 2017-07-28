@@ -1,12 +1,12 @@
-# This file was taken from https://codevault.io/kaeuferportal/dotfiles
-# Try to put general rules there and only add the project specific
-# rules to the copy in your project folder.
-
 AllCops:
   Exclude:
+    - 'bin/**/*'
     - 'db/schema.rb'
     - 'doc/**/*'
     - 'docker_app/**/*'
+    - 'Guardfile'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
 
 # We need to configure exemptions for blocks that we generally accept to be
 # long, since they are less comparable to methods and more comparable to
@@ -34,6 +34,12 @@ Style/Encoding:
   Exclude:
     - '*.gemspec'
 
+# Ruby 2.3 introduced optional automatic freezing of string literals
+# This might become default in future versions.
+# For details on this feature see the internet, e.g. https://wyeworks.com/blog/2015/12/1/immutable-strings-in-ruby-2-dot-3
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: always
+
 # This cop tries to make you use module_funtion instead of extend self
 # This is bad because both have their own use-case and should not be used
 # and sometimes cannot be used to do the same thing
@@ -60,7 +66,7 @@ Performance/Casecmp:
 Performance/Count:
   Enabled: false
 
-# Does not make sense when dealing with non-ActiveRecord like mongoid. that
+# Does not make sense when dealing with non-ActiveRecord like mongoid. That
 # Mongoid for example throws error if find_by returns nothing (but we expect
 # nil)
 Rails/FindBy:
