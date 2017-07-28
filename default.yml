@@ -1,7 +1,3 @@
-# This file was taken from https://codevault.io/kaeuferportal/dotfiles
-# Try to put general rules there and only add the project specific
-# rules to the copy in your project folder.
-
 AllCops:
   Exclude:
     - 'bin/**/*'
