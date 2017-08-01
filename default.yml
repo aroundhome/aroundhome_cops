@@ -7,6 +7,7 @@ AllCops:
     - 'Guardfile'
     - 'tmp/**/*'
     - 'vendor/**/*'
+    - 'db/migrate/20*.rb'
 
 # We need to configure exemptions for blocks that we generally accept to be
 # long, since they are less comparable to methods and more comparable to
