@@ -7,7 +7,15 @@ AllCops:
     - 'Guardfile'
     - 'tmp/**/*'
     - 'vendor/**/*'
-    - 'db/migrate/20*.rb'
+    - 'db/migrate/200*.rb'
+    - 'db/migrate/2010*.rb'
+    - 'db/migrate/2011*.rb'
+    - 'db/migrate/2012*.rb'
+    - 'db/migrate/2013*.rb'
+    - 'db/migrate/2014*.rb'
+    - 'db/migrate/2015*.rb'
+    - 'db/migrate/2016*.rb'
+
 
 # We need to configure exemptions for blocks that we generally accept to be
 # long, since they are less comparable to methods and more comparable to

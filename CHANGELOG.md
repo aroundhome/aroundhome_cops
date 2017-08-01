@@ -1,3 +1,8 @@
+## Version 1.2.1
+
+* AllCops
+  * Exclude:
+    * We now Exclude all migrations being done before 2017
 ## Version 1.2.0
 
 * Increase threshold for `Metrics/MethodLength`
