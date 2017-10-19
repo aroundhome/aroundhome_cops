@@ -35,7 +35,6 @@ Style/Documentation:
 # Encoding comments are not neccessary in all 2.x versions of ruby, since
 # UTF-8 has become the default encoding.
 Style/Encoding:
-  EnforcedStyle: never
   Enabled: true
   Exclude:
     - '*.gemspec'

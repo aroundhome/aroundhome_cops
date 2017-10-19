@@ -18,5 +18,5 @@ Gem::Specification.new do |spec|
                                         .reject { |f| f.match(%r{^spec/}) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'rubocop', '~> 0.35'
+  spec.add_dependency 'rubocop', '~> 0.51'
 end
