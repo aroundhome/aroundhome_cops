@@ -11,3 +11,11 @@ before_script:
 rubocop:
   script:
     - bundle exec rubocop
+
+publish_gem:
+  script:
+    - ./scripts/publish_gem.sh
+  only:
+    - master
+  when: manual
+  allow_failure: false
