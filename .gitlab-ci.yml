@@ -1,5 +1,9 @@
 image: ruby:latest
 
+stages:
+  - test
+  - publish
+
 variables:
   SSH_AUTH_SOCK: "/ssh-agent"
 
@@ -9,13 +13,14 @@ before_script:
   - bundle install --path=/tmp/bundler --quiet
 
 rubocop:
+  stage: test
   script:
     - bundle exec rubocop
 
 publish_gem:
+  stage: publish
   script:
     - ./scripts/publish_gem.sh
   only:
     - master
   when: manual
-  allow_failure: false
