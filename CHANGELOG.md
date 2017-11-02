@@ -1,7 +1,7 @@
 ## Version 1.1.2
 
 * Metrics/BlockLength: Exclude the following file:
-  - \*.rspec
+  - \*.gemspec
 
 
 ## Version 1.1.1
