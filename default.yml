@@ -25,6 +25,7 @@ Metrics/BlockLength:
     - 'config/environments/*.rb' # instead of excluding all :configure methods
     - 'config/routes.rb'
     - 'spec/spec_helper.rb' # instead of excluding all :configure methods
+    - '*.gemspec' # a gemspec could easily have more than the 25 lines limit
 
 Style/AsciiComments:
   Enabled: false

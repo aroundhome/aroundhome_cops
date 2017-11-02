@@ -1,3 +1,9 @@
+## Version 1.1.2
+
+* Metrics/BlockLength: Exclude the following file:
+  - \*.rspec
+
+
 ## Version 1.1.1
 
 * Rubocop of at least 0.51 version is now required
