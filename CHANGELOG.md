@@ -1,8 +1,11 @@
+## Version 1.2.0
+
+* Increase threshold for `Metrics/MethodLength`
+
 ## Version 1.1.2
 
 * Metrics/BlockLength: Exclude the following file:
   - \*.gemspec
-
 
 ## Version 1.1.1
 
