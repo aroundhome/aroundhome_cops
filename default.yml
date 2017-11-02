@@ -27,6 +27,14 @@ Metrics/BlockLength:
     - 'spec/spec_helper.rb' # instead of excluding all :configure methods
     - '*.gemspec' # a gemspec could easily have more than the 25 lines limit
 
+# Increase from rubocops default limit of 10 lines.
+# The idea of increasing the default limit is to reduce the "false alarm rate"
+# of this cop on projects without a rubocop_todo.yml.
+# The intention of the cop is to fight complicated methods, but it often triggers
+# for (subjectively) easy methods, too.
+Metrics/MethodLength:
+  Max: 16
+
 Style/AsciiComments:
   Enabled: false
 
