@@ -20,7 +20,7 @@ rubocop:
 publish_gem:
   stage: publish
   script:
-    - ./scripts/publish_gem.sh
+    - gemboy publish
   only:
     - master
   when: manual
