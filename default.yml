@@ -79,6 +79,14 @@ Style/NumericLiterals:
 Style/SingleLineBlockParams:
   Enabled: false
 
+# Rubocop 0.52.0 added new 'unannotated' style, which mistakenly treat
+# date/time formatting strings as regular formatting strings
+# Disable is temporary until the fix is released.
+# To check if the bug was fixed, make sure this code is okay for Rubocop:
+# Time.strptime('2017-12-13', '%Y-%m-%d')
+Style/FormatStringToken:
+  Enabled: false
+
 # No significant improvement in speed or memory usage apparent. Readability is
 # atrocious.
 Performance/Casecmp:

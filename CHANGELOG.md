@@ -1,3 +1,7 @@
+## Version 1.2.2
+
+* `Style/FormatStringToken` temporary disabled because of a bug in Rubocop 0.52.0
+
 ## Version 1.2.1
 
 * AllCops
