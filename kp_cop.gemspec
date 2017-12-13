@@ -19,4 +19,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'rubocop', '~> 0.51'
+
+  spec.add_development_dependency 'gemboy'
 end
