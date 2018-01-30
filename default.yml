@@ -29,6 +29,8 @@ Metrics/BlockLength:
     - define
     - shared_examples_for
     - shared_examples
+    - xcontext
+    - xdescribe
   Exclude:
     - 'config/environments/*.rb' # instead of excluding all :configure methods
     - 'config/routes.rb'

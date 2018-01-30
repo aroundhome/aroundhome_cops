@@ -1,3 +1,8 @@
+## Version 1.2.3
+
+* Also ignore `Metrics/BlockLength` violations for `xdescribe` and `xcontext`
+  (which are RSpec's pending equivalents of `describe` and `context`)
+
 ## Version 1.2.2
 
 * `Style/FormatStringToken` temporary disabled because of a bug in Rubocop 0.52.0
