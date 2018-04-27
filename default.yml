@@ -15,6 +15,7 @@ AllCops:
     - 'db/migrate/2014*.rb'
     - 'db/migrate/2015*.rb'
     - 'db/migrate/2016*.rb'
+    - 'db/migrate/2017*.rb'
 
 
 # We need to configure exemptions for blocks that we generally accept to be
