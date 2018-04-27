@@ -1,3 +1,8 @@
+## Version 1.3.0
+
+* Ignore all migrations before 2018
+* Exempt all migrations from metric checks
+
 ## Version 1.2.3
 
 * Also ignore `Metrics/BlockLength` violations for `xdescribe` and `xcontext`

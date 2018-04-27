@@ -15,6 +15,14 @@ AllCops:
     - 'db/migrate/2014*.rb'
     - 'db/migrate/2015*.rb'
     - 'db/migrate/2016*.rb'
+    - 'db/migrate/2017*.rb'
+
+# Models can have a bunch of attributes which lead to long methods and high
+# complexity values. However, these methods are still very readable because they
+# usually have a lot of repetition.
+Metrics:
+  Exclude:
+    - 'db/migrate/*.rb'
 
 
 # We need to configure exemptions for blocks that we generally accept to be
