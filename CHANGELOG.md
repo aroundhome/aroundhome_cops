@@ -1,3 +1,7 @@
+## Version 1.3.1
+
+* Ignore playground directory
+
 ## Version 1.3.0
 
 * Ignore all migrations before 2018
