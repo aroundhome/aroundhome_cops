@@ -8,6 +8,7 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/**/*'
     - 'playground/**/*'
+    - 'public/uploads/**/*'
     - 'db/migrate/200*.rb'
     - 'db/migrate/2010*.rb'
     - 'db/migrate/2011*.rb'
