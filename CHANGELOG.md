@@ -1,3 +1,7 @@
+## Version 1.3.2
+
+* Ignore uploaded files directory
+
 ## Version 1.3.1
 
 * Ignore playground directory
