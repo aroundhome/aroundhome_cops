@@ -1,3 +1,7 @@
+## Version 1.3.3
+
+* Ignore all public files
+
 ## Version 1.3.2
 
 * Ignore uploaded files directory
