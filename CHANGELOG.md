@@ -1,3 +1,7 @@
+## Version 1.3.4
+
+* Ignore node_modules
+
 ## Version 1.3.3
 
 * Ignore all public files

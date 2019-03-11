@@ -9,6 +9,7 @@ AllCops:
     - 'vendor/**/*'
     - 'playground/**/*'
     - 'public/**/*'
+    - 'node_modules/**/*'
     - 'db/migrate/200*.rb'
     - 'db/migrate/2010*.rb'
     - 'db/migrate/2011*.rb'
