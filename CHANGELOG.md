@@ -1,3 +1,10 @@
+## Version 1.3.5
+
+* **Removes**
+  * Perfomance rules. 0.68 version of rubocop dropping support for these rules. If needed by the team due to conventions, take a look into gem rubocop-perfomance.
+* **Discussion issue**
+  * https://codevault.io/kaeuferportal/kp_cop/issues/2
+
 ## Version 1.3.4
 
 * Ignore node_modules
