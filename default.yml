@@ -100,15 +100,6 @@ Style/SingleLineBlockParams:
 Style/FormatStringToken:
   Enabled: false
 
-# No significant improvement in speed or memory usage apparent. Readability is
-# atrocious.
-Performance/Casecmp:
-  Enabled: false
-
-# Not safe in a rails context, since Relation.count is != Enumerable.count
-Performance/Count:
-  Enabled: false
-
 # Does not make sense when dealing with non-ActiveRecord like mongoid. That
 # Mongoid for example throws error if find_by returns nothing (but we expect
 # nil)
