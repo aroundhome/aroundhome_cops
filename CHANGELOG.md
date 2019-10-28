@@ -1,3 +1,7 @@
+## Version 2.1.0
+
+* Allow ambiguous blocks in specs
+
 ## Version 2.0.0
 
 * Rename to `aroundhome_cops` (our company name changed a while ago)

@@ -20,6 +20,15 @@ AllCops:
     - 'db/migrate/2016*.rb'
     - 'db/migrate/2017*.rb'
 
+# While we like to write blocks like the following
+# expect { add_special_project }.not_to change { SpecialProject.count }
+# Rubocop doesn't like that and prefers either of the following options for clarity
+# expect { add_special_project }.not_to change(SpecialProject, :count)
+# expect { add_special_project }.not_to(change { SpecialProject.count })
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/**/*'
+
 # Models can have a bunch of attributes which lead to long methods and high
 # complexity values. However, these methods are still very readable because they
 # usually have a lot of repetition.
