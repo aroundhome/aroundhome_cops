@@ -1,3 +1,7 @@
+## Version 1.4.0
+
+* Rubocop 0.78 compatibility: Do not mention Rails cops anymore, since those have been removed
+
 ## Version 1.3.5
 
 * **Removes**
