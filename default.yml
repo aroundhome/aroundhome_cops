@@ -27,6 +27,12 @@ Metrics:
   Exclude:
     - 'db/migrate/*.rb'
 
+# See above (Metrics). This cop was previously called Metrics/LineLength
+# and therefore disabled as well for migrations.
+Layout/LineLength:
+  Exclude:
+    - 'db/migrate/*.rb'
+
 
 # We need to configure exemptions for blocks that we generally accept to be
 # long, since they are less comparable to methods and more comparable to
@@ -99,3 +105,20 @@ Style/SingleLineBlockParams:
 # Time.strptime('2017-12-13', '%Y-%m-%d')
 Style/FormatStringToken:
   Enabled: false
+
+# ----------------- Rubocop-forced enablements --------------
+
+# Since version 0.80 rubocop wants to cause fewer breaking changes by new cops.
+# Since then new cops have to be manually enabled/disabled for a warning to
+# disappear. Unless there is a reason to opt out of them, we will enable all of
+# them below.
+# Disabled cops will appear above with a comment explaining disablement.
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
