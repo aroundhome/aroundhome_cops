@@ -1,3 +1,9 @@
+## Version 1.5.0
+
+* Rubocop 0.80:
+    * explicitly decide on enablement of new cops
+    * keep `Layout/LineLength` disabled for migrations
+
 ## Version 1.4.0
 
 * Rubocop 0.78 compatibility: Do not mention Rails cops anymore, since those have been removed
