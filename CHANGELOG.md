@@ -1,3 +1,8 @@
+## Version 1.6.0
+
+* Rubocop 0.82:
+    * enable new cops
+
 ## Version 1.5.0
 
 * Rubocop 0.80:
