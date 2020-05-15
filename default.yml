@@ -114,6 +114,18 @@ Style/FormatStringToken:
 # them below.
 # Disabled cops will appear above with a comment explaining disablement.
 
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Style/ExponentialNotation:
+  Enabled: true
+
 Style/HashEachMethods:
   Enabled: true
 
