@@ -1,13 +1,9 @@
-## Version 1.6.0
-
-* Rubocop 0.82:
-    * enable new cops
-
 ## Version 1.5.0
 
-* Rubocop 0.80:
-    * explicitly decide on enablement of new cops
-    * keep `Layout/LineLength` disabled for migrations
+* Rubocop 0.82:
+    * Enable new cops
+    * Keep `Layout/LineLength` disabled for migrations
+* Use new gem source
 
 ## Version 1.4.0
 
