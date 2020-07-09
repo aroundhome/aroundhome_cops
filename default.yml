@@ -106,6 +106,16 @@ Style/SingleLineBlockParams:
 Style/FormatStringToken:
   Enabled: false
 
+# The maximum amount of positional arguments in a method really shouldn't exceed
+# the rubocop default of 5.
+# However, keyword arguments do not make a method signature as unreadable as positional
+# arguments. There are valid cases for longer argument lists (e.g. data objects or
+# DSLs with implicit default values).
+# In those cases keyword args provide a good balance between readability and the need to
+# pass more arguments into an object.
+Metrics/ParameterLists:
+  CountKeywordArgs: false
+
 # ----------------- Rubocop-forced enablements --------------
 
 # Since version 0.80 rubocop wants to cause fewer breaking changes by new cops.

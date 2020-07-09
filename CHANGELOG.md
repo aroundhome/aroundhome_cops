@@ -1,3 +1,7 @@
+## Version 1.7.0
+
+* Do not count keyword arguments in `Metrics/ParameterLists`
+
 ## Version 1.6.0
 
 * Rubocop 0.86
