@@ -21,6 +21,6 @@ publish_gem:
   stage: publish
   script:
     - gem build aroundhome_cops.gemspec
-    - gem push --host $GEM_HOST $(find `pwd` -name "aroundhome_cops-*.gem")
+    - curl -f -F file=@$(find `pwd` -name "aroundhome_cops-*.gem") $GEM_HOST/upload
   only:
     - master
