@@ -1,4 +1,4 @@
-# KpCop
+# AroundhomeCops
 
 This repository hosts our configuration gem for rubocop.
 
@@ -12,14 +12,14 @@ relevance, that it should probably live here.
 Include this gem in your Gemfile:
 
 ```ruby
-gem 'kp_cop', codevault: 'kaeuferportal/kp_cop'
+gem 'aroundhome_cops'
 ```
 
 Let your `.rubocop.yml` inherit from this gem:
 
 ```yml
 inherit_gem:
-  kp_cop:
+  aroundhome_cops:
     - default.yml
 ```
 
@@ -32,7 +32,7 @@ Take this example `.rubocop.yml`:
 
 ```yml
 inherit_gem:
-  kp_cop:
+  aroundhome_cops:
     - default.yml
 
 # We still have unfixed offenses in some files
