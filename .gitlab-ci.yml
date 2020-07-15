@@ -20,7 +20,7 @@ rubocop:
 publish_gem:
   stage: publish
   script:
-    - bundle exec gemboy publish
+    - gem build aroundhome_cops.gemspec
+    - gem push --host $GEM_HOST $(find `pwd` -name "aroundhome_cops-*.gem")
   only:
     - master
-  when: manual

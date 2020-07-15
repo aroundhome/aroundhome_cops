@@ -2,6 +2,8 @@
 
 * Rename to `aroundhome_cops` (our company name changed a while ago)
     * **Breaking**: This requires you to make changes to `.rubocop.yml`
+* Remove references to internals from the repository, so that open sourcing
+  the gem is possible
 
 ## Version 1.7.0
 

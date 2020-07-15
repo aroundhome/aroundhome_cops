@@ -12,13 +12,11 @@ Gem::Specification.new do |spec|
   spec.email         = ['jan.sandbrink@aroundhome.de']
 
   spec.summary       = 'Dependency and configuration for rubocop.'
-  spec.homepage      = 'https://codevault.io/aroundhome/aroundhome_cops'
+  spec.homepage      = 'https://github.com/aroundhome/aroundhome_cops'
 
   spec.files         = `git ls-files -z`.split("\x0")
                                         .reject { |f| f.match(%r{^spec/}) }
   spec.require_paths = ['lib']
 
   spec.add_dependency 'rubocop', '~> 0.86'
-
-  spec.add_development_dependency 'gemboy'
 end
