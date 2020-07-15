@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-source 'https://***REMOVED***:***REMOVED***@***REMOVED***'
+source 'https://rubygems.org'
 
 gemspec

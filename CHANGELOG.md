@@ -1,3 +1,10 @@
+## Version 2.0.0
+
+* Rename to `aroundhome_cops` (our company name changed a while ago)
+    * **Breaking**: This requires you to make changes to `.rubocop.yml`
+* Remove references to internals from the repository, so that open sourcing
+  the gem is possible
+
 ## Version 1.7.0
 
 * Do not count keyword arguments in `Metrics/ParameterLists`
@@ -23,7 +30,7 @@
 * **Removes**
   * Perfomance rules. 0.68 version of rubocop dropping support for these rules. If needed by the team due to conventions, take a look into gem rubocop-perfomance.
 * **Discussion issue**
-  * https://codevault.io/kaeuferportal/kp_cop/issues/2
+  * https://codevault.io/aroundhome/aroundhome_cops/issues/2
 
 ## Version 1.3.4
 
