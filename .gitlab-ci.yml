@@ -20,7 +20,14 @@ rubocop:
 publish_gem:
   stage: publish
   script:
+    - mkdir ~/.gem
+    - |
+      cat << EOF > ~/.gem/credentials
+      ---
+      :rubygems_api_key: ${RUBYGEMS_API_KEY}
+      EOF
+    - chmod 0600 ~/.gem/credentials
     - gem build aroundhome_cops.gemspec
-    - curl -f -F file=@$(find `pwd` -name "aroundhome_cops-*.gem") $GEM_HOST/upload
+    - gem push (find `pwd` -name "aroundhome_cops-*.gem")
   only:
     - master
