@@ -28,6 +28,6 @@ publish_gem:
       EOF
     - chmod 0600 ~/.gem/credentials
     - gem build aroundhome_cops.gemspec
-    - gem push (find `pwd` -name "aroundhome_cops-*.gem")
+    - gem push $(find `pwd` -name "aroundhome_cops-*.gem")
   only:
     - master
