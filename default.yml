@@ -19,6 +19,9 @@ AllCops:
     - 'db/migrate/2015*.rb'
     - 'db/migrate/2016*.rb'
     - 'db/migrate/2017*.rb'
+  SuggestExtensions:
+    rubocop-rspec: false
+    rubocop-rails: false
 
 # While we like to write blocks like the following
 # expect { add_special_project }.not_to change { SpecialProject.count }
@@ -47,7 +50,7 @@ Layout/LineLength:
 # long, since they are less comparable to methods and more comparable to
 # modules/classes.
 Metrics/BlockLength:
-  ExcludedMethods:
+  IgnoredMethods:
     - context
     - describe
     - namespace
@@ -133,44 +136,63 @@ Metrics/ParameterLists:
 # them below.
 # Disabled cops will appear above with a comment explaining disablement.
 
-Layout/SpaceAroundMethodCallOperator:
+Gemspec/DateAssignment: # (new in 1.10)
   Enabled: true
-
-Lint/RaiseException:
+Layout/SpaceBeforeBrackets: # (new in 1.7)
   Enabled: true
-
-Lint/StructNewOverride:
+Lint/AmbiguousAssignment: # (new in 1.7)
   Enabled: true
-
-Style/ExponentialNotation:
+Lint/DeprecatedConstants: # (new in 1.8)
   Enabled: true
-
-Style/HashEachMethods:
+Lint/DuplicateBranch: # (new in 1.3)
   Enabled: true
-
-Style/HashTransformKeys:
+Lint/DuplicateRegexpCharacterClassElement: # (new in 1.1)
   Enabled: true
-
-Style/HashTransformValues:
+Lint/EmptyBlock: # (new in 1.1)
   Enabled: true
-
-Layout/EmptyLinesAroundAttributeAccessor:
+Lint/EmptyClass: # (new in 1.3)
   Enabled: true
-
-Lint/DeprecatedOpenSSLConstant:
+Lint/LambdaWithoutLiteralBlock: # (new in 1.8)
   Enabled: true
-
-Lint/MixedRegexpCaptureTypes:
+Lint/NoReturnInBeginEndBlocks: # (new in 1.2)
   Enabled: true
-
-Style/RedundantFetchBlock:
+Lint/NumberedParameterAssignment: # (new in 1.9)
   Enabled: true
-
-Style/RedundantRegexpCharacterClass:
+Lint/OrAssignmentToConstant: # (new in 1.9)
   Enabled: true
-
-Style/RedundantRegexpEscape:
+Lint/RedundantDirGlobSort: # (new in 1.8)
   Enabled: true
-
-Style/SlicingWithRange:
+Lint/SymbolConversion: # (new in 1.9)
+  Enabled: true
+Lint/ToEnumArguments: # (new in 1.1)
+  Enabled: true
+Lint/TripleQuotes: # (new in 1.9)
+  Enabled: true
+Lint/UnexpectedBlockArity: # (new in 1.5)
+  Enabled: true
+Lint/UnmodifiedReduceAccumulator: # (new in 1.1)
+  Enabled: true
+Style/ArgumentsForwarding: # (new in 1.1)
+  Enabled: true
+Style/CollectionCompact: # (new in 1.2)
+  Enabled: true
+Style/DocumentDynamicEvalDefinition: # (new in 1.1)
+  Enabled: true
+Style/EndlessMethod: # (new in 1.8)
+  Enabled: true
+Style/HashConversion: # (new in 1.10)
+  Enabled: true
+Style/HashExcept: # (new in 1.7)
+  Enabled: true
+Style/IfWithBooleanLiteralBranches: # (new in 1.9)
+  Enabled: true
+Style/NegatedIfElseCondition: # (new in 1.2)
+  Enabled: true
+Style/NilLambda: # (new in 1.3)
+  Enabled: true
+Style/RedundantArgument: # (new in 1.4)
+  Enabled: true
+Style/StringChars: # (new in 1.12)
+  Enabled: true
+Style/SwapValues: # (new in 1.1)
   Enabled: true
