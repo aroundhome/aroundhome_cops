@@ -1,3 +1,7 @@
+## Version 3.0.0
+
+* Support Rubocop 1.0 and opt into all offenses up until 1.13
+
 ## Version 2.1.0
 
 * Allow ambiguous blocks in specs
