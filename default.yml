@@ -139,24 +139,21 @@ RSpec/ContextWording:
   - without
   - and
 
-# Complex testst need more flexibility to be written, doubling the default (5) makes
-# this less-breaking in our projects
+# Complex tests require more flexibility in their length than allowed by default (5).
 RSpec/ExampleLength:
   Max: 10
 
-# Complex tests need more objects to be around, doubling the default (5) makes
-# this less-breaking in our projects
+# Complex tests often rely on more objects than allowed by default (5).
 RSpec/MultipleMemoizedHelpers:
   Max: 10
 
-# Complex tests generate more readable output with deeper grouping, rounding up
-# the default (3) makes this less-breaking in our projects
+# Complex tests often generate more readable output with deeper nesting. The 
+# default (3) doesn't provide enough flexibility.
 RSpec/NestedGroups:
   Max: 5
 
-# Sometimes it makes sense to verify 2 things instead of one without duplicating the test
-# Most cases where we break this, we use 2, so changing the default from 1 to 2
-# makes this cop less-breaking in our projects
+# It sometimes makes sense to verify two things in a single test, which isn't allowed
+# by default (the default value is 1).
 RSpec/MultipleExpectations:
   Max: 2
 
