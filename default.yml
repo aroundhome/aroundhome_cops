@@ -144,17 +144,17 @@ RSpec/ContextWording:
 RSpec/ExampleLength:
   Max: 10
 
-# Complex testst need more objects to be around, doubling the default (5) makes
+# Complex tests need more objects to be around, doubling the default (5) makes
 # this less-breaking in our projects
 RSpec/MultipleMemoizedHelpers:
   Max: 10
 
-# Complex testst generate more readable output with deeper grouping, rounding up
+# Complex tests generate more readable output with deeper grouping, rounding up
 # the default (3) makes this less-breaking in our projects
 RSpec/NestedGroups:
   Max: 5
 
-# Sometimes it makes sence to verify 2 things instead of one withoud duplicating the test
+# Sometimes it makes sense to verify 2 things instead of one without duplicating the test
 # Most cases where we break this, we use 2, so changing the default from 1 to 2
 # makes this cop less-breaking in our projects
 RSpec/MultipleExpectations:
