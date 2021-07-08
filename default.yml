@@ -1,3 +1,6 @@
+require:
+  - rubocop-rspec
+
 AllCops:
   Exclude:
     - 'bin/**/*'
@@ -20,7 +23,6 @@ AllCops:
     - 'db/migrate/2016*.rb'
     - 'db/migrate/2017*.rb'
   SuggestExtensions:
-    rubocop-rspec: false
     rubocop-rails: false
 
 # While we like to write blocks like the following
@@ -128,6 +130,36 @@ Style/FormatStringToken:
 Metrics/ParameterLists:
   CountKeywordArgs: false
 
+# Adding "and" prefix to list of allowed prefixes to allow for nested contexts
+# that start with "and" as a connector word "when foo is true and bar is false"
+RSpec/ContextWording:
+  Prefixes:
+  - when
+  - with
+  - without
+  - and
+
+# Complex testst need more flexibility to be written, doubling the default (5) makes
+# this less-breaking in our projects
+RSpec/ExampleLength:
+  Max: 10
+
+# Complex testst need more objects to be around, doubling the default (5) makes
+# this less-breaking in our projects
+RSpec/MultipleMemoizedHelpers:
+  Max: 10
+
+# Complex testst generate more readable output with deeper grouping, rounding up
+# the default (3) makes this less-breaking in our projects
+RSpec/NestedGroups:
+  Max: 5
+
+# Sometimes it makes sence to verify 2 things instead of one withoud duplicating the test
+# Most cases where we break this, we use 2, so changing the default from 1 to 2
+# makes this cop less-breaking in our projects
+RSpec/MultipleExpectations:
+  Max: 2
+
 # ----------------- Rubocop-forced enablements --------------
 
 # Since version 0.80 rubocop wants to cause fewer breaking changes by new cops.
@@ -207,4 +239,11 @@ Style/InPatternThen: # (new in 1.16)
 Style/MultilineInPatternThen: # (new in 1.16)
   Enabled: true
 Style/QuotedSymbols: # (new in 1.16)
+  Enabled: true
+
+# ----------------- Rubocop-Rspec forced enablements --------------
+
+RSpec/IdenticalEqualityAssertion: # (new in 2.4)
+  Enabled: true
+RSpec/Rails/AvoidSetupHook: # (new in 2.4)
   Enabled: true
