@@ -152,11 +152,6 @@ RSpec/MultipleMemoizedHelpers:
 RSpec/NestedGroups:
   Max: 5
 
-# It sometimes makes sense to verify two things in a single test, which isn't allowed
-# by default (the default value is 1).
-RSpec/MultipleExpectations:
-  Max: 2
-
 # ----------------- Rubocop-forced enablements --------------
 
 # Since version 0.80 rubocop wants to cause fewer breaking changes by new cops.
