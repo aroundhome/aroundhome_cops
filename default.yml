@@ -141,16 +141,20 @@ RSpec/ContextWording:
 
 # Complex tests require more flexibility in their length than allowed by default (5).
 RSpec/ExampleLength:
-  Max: 10
+  Max: 15
 
 # Complex tests often rely on more objects than allowed by default (5).
 RSpec/MultipleMemoizedHelpers:
   Max: 10
 
-# Complex tests often generate more readable output with deeper nesting. The 
+# Named subjects are not used anywhere
+RSpec/NamedSubject:
+  Enabled: false
+
+# Complex tests often generate more readable output with deeper nesting. The
 # default (3) doesn't provide enough flexibility.
 RSpec/NestedGroups:
-  Max: 5
+  Max: 7
 
 # ----------------- Rubocop-forced enablements --------------
 
