@@ -1,3 +1,7 @@
+## Version 4.1.0
+* Specify more precise defaults for rspec
+* upgrade rubocop and rubocop-rspec and enable new offenses
+
 ## Version 4.0.0
 * Opt into all Rubocop offenses up until 1.18
 * Add rubocop-rspec as a dependency, to enforce better specs
