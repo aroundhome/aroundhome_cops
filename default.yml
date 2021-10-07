@@ -141,13 +141,16 @@ RSpec/ContextWording:
 
 # Complex tests require more flexibility in their length than allowed by default (5).
 RSpec/ExampleLength:
-  Max: 15
+  Max: 10
 
 # Complex tests often rely on more objects than allowed by default (5).
 RSpec/MultipleMemoizedHelpers:
   Max: 10
 
-# Named subjects are not used anywhere
+# We rarely use named subjects in our own projects.
+# While it is a good practice in some cases, we do not want to enforce it
+# through Rubocop.
+# https://www.rubydoc.info/gems/rubocop-rspec/1.6.0/RuboCop/Cop/RSpec/NamedSubject
 RSpec/NamedSubject:
   Enabled: false
 
