@@ -1,3 +1,6 @@
+## Version 4.2.0
+* Add rubocop-rake as a dependency, to enforce better specs
+
 ## Version 4.1.0
 * Specify more precise defaults for rspec
 * upgrade rubocop and rubocop-rspec and enable new offenses
