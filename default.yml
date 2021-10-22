@@ -160,6 +160,20 @@ RSpec/NamedSubject:
 RSpec/NestedGroups:
   Max: 7
 
+# While well intentioned at teaching about the existence of be_something matchers
+# in RSpec, this one produces false positives on methods such as
+#
+#     expect(hash.key?('foo')).to be_truthy
+#
+# Where it suggests to change towards:
+#
+#     expect(hash).to be_key('foo')
+#
+# While this works, it is less readable. The hash IS NOT the key, but it HAS the key.
+# Similar mistakes happen for other methods (e.g. File.exist?).
+RSpec/PredicateMatcher:
+  Enabled: false
+
 # ----------------- Rubocop-forced enablements --------------
 
 # Since version 0.80 rubocop wants to cause fewer breaking changes by new cops.

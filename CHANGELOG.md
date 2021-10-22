@@ -1,3 +1,6 @@
+## Version 4.3.0
+* Disable `RSpec/PredicateMatcher` due to false positives
+
 ## Version 4.2.0
 * Add rubocop-rake as a dependency, to enforce better specs
 
