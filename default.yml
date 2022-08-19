@@ -53,7 +53,7 @@ Layout/LineLength:
 # long, since they are less comparable to methods and more comparable to
 # modules/classes.
 Metrics/BlockLength:
-  IgnoredMethods:
+  AllowedMethods:
     - context
     - describe
     - namespace
@@ -174,6 +174,10 @@ RSpec/NestedGroups:
 RSpec/PredicateMatcher:
   Enabled: false
 
+# While in general 2FA is a good idea, adding 2FA to CI/CD is a difficulty.
+Gemspec/RequireMFA: # new in 1.23
+  Enabled: false
+
 # ----------------- Rubocop-forced enablements --------------
 
 # Since version 0.80 rubocop wants to cause fewer breaking changes by new cops.
@@ -182,8 +186,6 @@ RSpec/PredicateMatcher:
 # them below.
 # Disabled cops will appear above with a comment explaining disablement.
 
-Gemspec/DateAssignment: # (new in 1.10)
-  Enabled: true
 Layout/SpaceBeforeBrackets: # (new in 1.7)
   Enabled: true
 Lint/AmbiguousAssignment: # (new in 1.7)
@@ -272,6 +274,50 @@ Style/MultilineInPatternThen: # (new in 1.16)
   Enabled: true
 Style/QuotedSymbols: # (new in 1.16)
   Enabled: true
+Gemspec/DeprecatedAttributeAssignment: # new in 1.30
+  Enabled: true
+Layout/LineContinuationLeadingSpace: # new in 1.31
+  Enabled: true
+Layout/LineContinuationSpacing: # new in 1.31
+  Enabled: true
+Lint/ConstantOverwrittenInRescue: # new in 1.31
+  Enabled: true
+Lint/NonAtomicFileOperation: # new in 1.31
+  Enabled: true
+Lint/RefinementImportMethods: # new in 1.27
+  Enabled: true
+Lint/RequireRangeParentheses: # new in 1.32
+  Enabled: true
+Lint/UselessRuby2Keywords: # new in 1.23
+  Enabled: true
+Naming/BlockForwarding: # new in 1.24
+  Enabled: true
+Security/CompoundHash: # new in 1.28
+  Enabled: true
+Style/EmptyHeredoc: # new in 1.32
+  Enabled: true
+Style/EnvHome: # new in 1.29
+  Enabled: true
+Style/FetchEnvVar: # new in 1.28
+  Enabled: true
+Style/FileRead: # new in 1.24
+  Enabled: true
+Style/FileWrite: # new in 1.24
+  Enabled: true
+Style/MagicCommentFormat: # new in 1.35
+  Enabled: true
+Style/MapCompactWithConditionalBlock: # new in 1.30
+  Enabled: true
+Style/MapToHash: # new in 1.24
+  Enabled: true
+Style/NestedFileDirname: # new in 1.26
+  Enabled: true
+Style/ObjectThen: # new in 1.28
+  Enabled: true
+Style/OpenStructUse: # new in 1.23
+  Enabled: true
+Style/RedundantInitialize: # new in 1.27
+  Enabled: true
 
 # ----------------- Rubocop-Rspec forced enablements --------------
 RSpec/ExcessiveDocstringSpacing: # (new in 2.5)
@@ -281,4 +327,18 @@ RSpec/IdenticalEqualityAssertion: # (new in 2.4)
 RSpec/Rails/AvoidSetupHook: # (new in 2.4)
   Enabled: true
 RSpec/SubjectDeclaration: # (new in 2.5)
+  Enabled: true
+RSpec/BeEq: # new in 2.9.0
+  Enabled: true
+RSpec/BeNil: # new in 2.9.0
+  Enabled: true
+RSpec/ChangeByZero: # new in 2.11.0
+  Enabled: true
+RSpec/VerifiedDoubleReference: # new in 2.10.0
+  Enabled: true
+RSpec/Capybara/SpecificMatcher: # new in 2.12
+  Enabled: true
+RSpec/FactoryBot/SyntaxMethods: # new in 2.7
+  Enabled: true
+RSpec/Rails/HaveHttpStatus: # new in 2.12
   Enabled: true

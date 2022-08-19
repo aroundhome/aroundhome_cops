@@ -1,3 +1,8 @@
+## Version 5.0.0
+* Opt into all Rubocop offenses up until 1.35 & rspec 2.12
+* Update minimum rubocop to 1.35
+  * Dropped support for ruby < 2.6
+
 ## Version 4.3.1
 * Disable updating to rubocop 1.31 as it will break our config.
 
