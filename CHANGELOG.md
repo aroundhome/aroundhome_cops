@@ -1,3 +1,6 @@
+## Version 4.3.1
+* Disable updating to rubocop 1.31 as it will break our config.
+
 ## Version 4.3.0
 * Disable `RSpec/PredicateMatcher` due to false positives
 
