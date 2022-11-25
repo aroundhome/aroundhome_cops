@@ -1,3 +1,6 @@
+## Version 5.0.2
+* use EnforcedStyle: explicit for [BlockForwarding](https://www.rubydoc.info/gems/rubocop/RuboCop/Cop/Naming/BlockForwarding)
+
 ## Version 5.0.1
 * [do not expect syntax](https://www.rubydoc.info/gems/rubocop-rspec/1.10.0/RuboCop/Cop/RSpec/MessageSpies) of [message spies](https://relishapp.com/rspec/rspec-mocks/docs/basics/spies) by default
   
