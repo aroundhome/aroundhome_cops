@@ -1,9 +1,13 @@
+## Version 5.10
+
+* Disable `Rake/Desc` cop
+
 ## Version 5.0.2
 * use EnforcedStyle: explicit for [BlockForwarding](https://www.rubydoc.info/gems/rubocop/RuboCop/Cop/Naming/BlockForwarding)
 
 ## Version 5.0.1
 * [do not expect syntax](https://www.rubydoc.info/gems/rubocop-rspec/1.10.0/RuboCop/Cop/RSpec/MessageSpies) of [message spies](https://relishapp.com/rspec/rspec-mocks/docs/basics/spies) by default
-  
+
 ## Version 5.0.0
 * Opt into all Rubocop offenses up until 1.35 & rspec 2.12
 * Update minimum rubocop to 1.35
