@@ -30,4 +30,4 @@ publish_gem:
     - gem build aroundhome_cops.gemspec
     - gem push $(find `pwd` -name "aroundhome_cops-*.gem")
   only:
-    - master
+    - main
