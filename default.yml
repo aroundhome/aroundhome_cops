@@ -188,6 +188,13 @@ RSpec/MessageSpies:
 Gemspec/RequireMFA: # new in 1.23
   Enabled: false
 
+# Suggests to add a description to every rake task. However, we only
+# want to describe "public" tasks, not all of them.
+# The cop also flags places where we hook into internal tasks of other gems, e.g.
+#    task 'resque:setup' => :environment
+Rake/Desc:
+  Enabled: false
+
 # ----------------- Rubocop-forced enablements --------------
 
 # Since version 0.80 rubocop wants to cause fewer breaking changes by new cops.
