@@ -1,4 +1,4 @@
-## Version 5.10
+## Version 5.1.0
 
 * Disable `Rake/Desc` cop
 
