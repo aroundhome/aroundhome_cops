@@ -1,3 +1,7 @@
+## Version 6.0.1
+
+* Fix deprecation warnings and multiple defined default cops
+
 ## Version 6.0.0
 
 * Update underlying rubocop to at least 1.63
