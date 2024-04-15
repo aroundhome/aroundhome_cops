@@ -1,3 +1,10 @@
+## Version 6.0.0
+
+* Update underlying rubocop to at least 1.63
+    * Opt into all Rubocop offenses up until 1.63
+    * **Breaking**: Effectively dropping runtime support for Ruby 2.6 and below
+    * Adds support for Ruby 3.3
+
 ## Version 5.1.0
 
 * Disable `Rake/Desc` cop
