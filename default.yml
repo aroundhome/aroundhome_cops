@@ -134,6 +134,7 @@ Metrics/ParameterLists:
 # People coming from other languages or our junior colleagues will find a single & confusing.
 # Omitting the parameter name is neither more readable or helpful, therefore we prefer to use &block syntax.
 Naming/BlockForwarding:
+  Enabled: true
   EnforcedStyle: explicit
 
 # Adding "and" prefix to list of allowed prefixes to allow for nested contexts
@@ -351,8 +352,6 @@ Lint/UselessRescue: # new in 1.43
   Enabled: true
 Metrics/CollectionLiteralLength: # new in 1.47
   Enabled: true
-Naming/BlockForwarding: # new in 1.24
-  Enabled: true
 Style/ArrayIntersect: # new in 1.40
   Enabled: true
 Style/ComparableClamp: # new in 1.44
@@ -411,7 +410,7 @@ RSpec/ExcessiveDocstringSpacing: # (new in 2.5)
   Enabled: true
 RSpec/IdenticalEqualityAssertion: # (new in 2.4)
   Enabled: true
-RSpec/Rails/AvoidSetupHook: # (new in 2.4)
+RSpecRails/AvoidSetupHook: # (new in 2.4)
   Enabled: true
 RSpec/SubjectDeclaration: # (new in 2.5)
   Enabled: true
@@ -423,11 +422,11 @@ RSpec/ChangeByZero: # new in 2.11.0
   Enabled: true
 RSpec/VerifiedDoubleReference: # new in 2.10.0
   Enabled: true
-RSpec/Capybara/SpecificMatcher: # new in 2.12
+Capybara/SpecificMatcher: # new in 2.12
   Enabled: true
-RSpec/FactoryBot/SyntaxMethods: # new in 2.7
+FactoryBot/SyntaxMethods: # new in 2.7
   Enabled: true
-RSpec/Rails/HaveHttpStatus: # new in 2.12
+RSpecRails/HaveHttpStatus: # new in 2.12
   Enabled: true
 RSpec/RedundantPredicateMatcher: # new in 2.26
   Enabled: true
