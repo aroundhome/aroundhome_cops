@@ -2,6 +2,8 @@
 
 * No longer suggest rubocop-factory_bot
 * No longer force fixes after updates for older migrations
+* Update underlying rubocop to at least 1.64
+  * Opt into all Rubocop offenses up until 1.64
 
 ## Version 6.0.1
 

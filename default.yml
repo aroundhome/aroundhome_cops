@@ -31,21 +31,20 @@ AllCops:
 # expect { add_special_project }.not_to(change { SpecialProject.count })
 Lint/AmbiguousBlockAssociation:
   Exclude:
-    - 'spec/**/*'
+    - "spec/**/*"
 
 # Models can have a bunch of attributes which lead to long methods and high
 # complexity values. However, these methods are still very readable because they
 # usually have a lot of repetition.
 Metrics:
   Exclude:
-    - 'db/migrate/*.rb'
+    - "db/migrate/*.rb"
 
 # See above (Metrics). This cop was previously called Metrics/LineLength
 # and therefore disabled as well for migrations.
 Layout/LineLength:
   Exclude:
-    - 'db/migrate/*.rb'
-
+    - "db/migrate/*.rb"
 
 # We need to configure exemptions for blocks that we generally accept to be
 # long, since they are less comparable to methods and more comparable to
@@ -62,10 +61,10 @@ Metrics/BlockLength:
     - xcontext
     - xdescribe
   Exclude:
-    - 'config/environments/*.rb' # instead of excluding all :configure methods
-    - 'config/routes.rb'
-    - 'spec/spec_helper.rb' # instead of excluding all :configure methods
-    - '*.gemspec' # a gemspec could easily have more than the 25 lines limit
+    - "config/environments/*.rb" # instead of excluding all :configure methods
+    - "config/routes.rb"
+    - "spec/spec_helper.rb" # instead of excluding all :configure methods
+    - "*.gemspec" # a gemspec could easily have more than the 25 lines limit
 
 # Increase from rubocops default limit of 10 lines.
 # The idea of increasing the default limit is to reduce the "false alarm rate"
@@ -86,7 +85,7 @@ Style/Documentation:
 Style/Encoding:
   Enabled: true
   Exclude:
-    - '*.gemspec'
+    - "*.gemspec"
 
 # Ruby 2.3 introduced optional automatic freezing of string literals
 # This might become default in future versions.
@@ -139,10 +138,10 @@ Naming/BlockForwarding:
 # that start with "and" as a connector word "when foo is true and bar is false"
 RSpec/ContextWording:
   Prefixes:
-  - when
-  - with
-  - without
-  - and
+    - when
+    - with
+    - without
+    - and
 
 # Complex tests require more flexibility in their length than allowed by default (5).
 RSpec/ExampleLength:
@@ -401,6 +400,10 @@ Style/SingleLineDoEndBlock: # new in 1.57
 Style/SuperWithArgsParentheses: # new in 1.58
   Enabled: true
 Style/YAMLFileRead: # new in 1.53
+  Enabled: true
+Style/SendWithLiteralMethodName: # new in 1.64
+  Enabled: true
+Style/SuperArguments: # new in 1.64
   Enabled: true
 
 # ----------------- Rubocop-Rspec forced enablements --------------
