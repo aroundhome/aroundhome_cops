@@ -4,25 +4,22 @@ require:
 
 AllCops:
   Exclude:
-    - 'bin/**/*'
-    - 'db/schema.rb'
-    - 'doc/**/*'
-    - 'docker_app/**/*'
-    - 'Guardfile'
-    - 'tmp/**/*'
-    - 'vendor/**/*'
-    - 'playground/**/*'
-    - 'public/**/*'
-    - 'node_modules/**/*'
-    - 'db/migrate/200*.rb'
-    - 'db/migrate/2010*.rb'
-    - 'db/migrate/2011*.rb'
-    - 'db/migrate/2012*.rb'
-    - 'db/migrate/2013*.rb'
-    - 'db/migrate/2014*.rb'
-    - 'db/migrate/2015*.rb'
-    - 'db/migrate/2016*.rb'
-    - 'db/migrate/2017*.rb'
+    - "bin/**/*"
+    - "db/schema.rb"
+    - "doc/**/*"
+    - "docker_app/**/*"
+    - "Guardfile"
+    - "tmp/**/*"
+    - "vendor/**/*"
+    - "playground/**/*"
+    - "public/**/*"
+    - "node_modules/**/*"
+    - "db/migrate/200*.rb"
+    - "db/migrate/201*.rb"
+    - "db/migrate/2020*.rb"
+    - "db/migrate/2021*.rb"
+    - "db/migrate/2022*.rb"
+    - "db/migrate/2023*.rb"
   SuggestExtensions:
     rubocop-rails: false
 

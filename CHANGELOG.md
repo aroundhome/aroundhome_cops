@@ -1,3 +1,7 @@
+## Ureleased
+
+* No longer force fixes after updates for older migrations
+
 ## Version 6.0.1
 
 * Fix deprecation warnings and multiple defined default cops
