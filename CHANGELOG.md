@@ -1,5 +1,6 @@
 ## Ureleased
 
+* No longer suggest rubocop-factory_bot
 * No longer force fixes after updates for older migrations
 
 ## Version 6.0.1

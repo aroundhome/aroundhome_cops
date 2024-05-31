@@ -22,6 +22,7 @@ AllCops:
     - "db/migrate/2023*.rb"
   SuggestExtensions:
     rubocop-rails: false
+    rubocop-factory_bot: false
 
 # While we like to write blocks like the following
 # expect { add_special_project }.not_to change { SpecialProject.count }
