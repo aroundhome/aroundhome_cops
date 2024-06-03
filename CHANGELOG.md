@@ -1,4 +1,4 @@
-## Ureleased
+## Version 7.0.0 (2024-06-03)
 
 * No longer suggest rubocop-factory_bot
 * No longer force fixes after updates for older migrations
