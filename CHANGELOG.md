@@ -4,6 +4,8 @@
 * No longer force fixes after updates for older migrations
 * Update underlying rubocop to at least 1.64
   * Opt into all Rubocop offenses up until 1.64
+* Update underlying rubocop-rspec to at least 2.30
+  * Opt into all Rubocop-Rspec offenses up until 2.30
 * Add rubocop-performance as a dependency, to enforce more performant code
 
 ## Version 6.0.1

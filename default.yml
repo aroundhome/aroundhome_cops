@@ -512,6 +512,8 @@ RSpecRails/NegationBeValid: # new in 2.23
   Enabled: true
 RSpecRails/TravelAround: # new in 2.19
   Enabled: true
+RSpec/ExpectInLet: # new in 2.30
+  Enabled: true
 
 # ----------------- Rubocop-Performance forced enablements --------------
 Performance/AncestorsInclude: # new in 1.7
