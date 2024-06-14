@@ -1,30 +1,29 @@
 require:
+  - rubocop-performance
   - rubocop-rspec
   - rubocop-rake
 
 AllCops:
   Exclude:
-    - 'bin/**/*'
-    - 'db/schema.rb'
-    - 'doc/**/*'
-    - 'docker_app/**/*'
-    - 'Guardfile'
-    - 'tmp/**/*'
-    - 'vendor/**/*'
-    - 'playground/**/*'
-    - 'public/**/*'
-    - 'node_modules/**/*'
-    - 'db/migrate/200*.rb'
-    - 'db/migrate/2010*.rb'
-    - 'db/migrate/2011*.rb'
-    - 'db/migrate/2012*.rb'
-    - 'db/migrate/2013*.rb'
-    - 'db/migrate/2014*.rb'
-    - 'db/migrate/2015*.rb'
-    - 'db/migrate/2016*.rb'
-    - 'db/migrate/2017*.rb'
+    - "bin/**/*"
+    - "db/schema.rb"
+    - "doc/**/*"
+    - "docker_app/**/*"
+    - "Guardfile"
+    - "tmp/**/*"
+    - "vendor/**/*"
+    - "playground/**/*"
+    - "public/**/*"
+    - "node_modules/**/*"
+    - "db/migrate/200*.rb"
+    - "db/migrate/201*.rb"
+    - "db/migrate/2020*.rb"
+    - "db/migrate/2021*.rb"
+    - "db/migrate/2022*.rb"
+    - "db/migrate/2023*.rb"
   SuggestExtensions:
     rubocop-rails: false
+    rubocop-factory_bot: false
 
 # While we like to write blocks like the following
 # expect { add_special_project }.not_to change { SpecialProject.count }
@@ -33,21 +32,20 @@ AllCops:
 # expect { add_special_project }.not_to(change { SpecialProject.count })
 Lint/AmbiguousBlockAssociation:
   Exclude:
-    - 'spec/**/*'
+    - "spec/**/*"
 
 # Models can have a bunch of attributes which lead to long methods and high
 # complexity values. However, these methods are still very readable because they
 # usually have a lot of repetition.
 Metrics:
   Exclude:
-    - 'db/migrate/*.rb'
+    - "db/migrate/*.rb"
 
 # See above (Metrics). This cop was previously called Metrics/LineLength
 # and therefore disabled as well for migrations.
 Layout/LineLength:
   Exclude:
-    - 'db/migrate/*.rb'
-
+    - "db/migrate/*.rb"
 
 # We need to configure exemptions for blocks that we generally accept to be
 # long, since they are less comparable to methods and more comparable to
@@ -64,10 +62,10 @@ Metrics/BlockLength:
     - xcontext
     - xdescribe
   Exclude:
-    - 'config/environments/*.rb' # instead of excluding all :configure methods
-    - 'config/routes.rb'
-    - 'spec/spec_helper.rb' # instead of excluding all :configure methods
-    - '*.gemspec' # a gemspec could easily have more than the 25 lines limit
+    - "config/environments/*.rb" # instead of excluding all :configure methods
+    - "config/routes.rb"
+    - "spec/spec_helper.rb" # instead of excluding all :configure methods
+    - "*.gemspec" # a gemspec could easily have more than the 25 lines limit
 
 # Increase from rubocops default limit of 10 lines.
 # The idea of increasing the default limit is to reduce the "false alarm rate"
@@ -88,7 +86,7 @@ Style/Documentation:
 Style/Encoding:
   Enabled: true
   Exclude:
-    - '*.gemspec'
+    - "*.gemspec"
 
 # Ruby 2.3 introduced optional automatic freezing of string literals
 # This might become default in future versions.
@@ -141,10 +139,10 @@ Naming/BlockForwarding:
 # that start with "and" as a connector word "when foo is true and bar is false"
 RSpec/ContextWording:
   Prefixes:
-  - when
-  - with
-  - without
-  - and
+    - when
+    - with
+    - without
+    - and
 
 # Complex tests require more flexibility in their length than allowed by default (5).
 RSpec/ExampleLength:
@@ -404,6 +402,10 @@ Style/SuperWithArgsParentheses: # new in 1.58
   Enabled: true
 Style/YAMLFileRead: # new in 1.53
   Enabled: true
+Style/SendWithLiteralMethodName: # new in 1.64
+  Enabled: true
+Style/SuperArguments: # new in 1.64
+  Enabled: true
 
 # ----------------- Rubocop-Rspec forced enablements --------------
 RSpec/ExcessiveDocstringSpacing: # (new in 2.5)
@@ -509,4 +511,46 @@ RSpecRails/MinitestAssertions: # new in 2.17
 RSpecRails/NegationBeValid: # new in 2.23
   Enabled: true
 RSpecRails/TravelAround: # new in 2.19
+  Enabled: true
+RSpec/ExpectInLet: # new in 2.30
+  Enabled: true
+
+# ----------------- Rubocop-Performance forced enablements --------------
+Performance/AncestorsInclude: # new in 1.7
+  Enabled: true
+Performance/BigDecimalWithNumericArgument: # new in 1.7
+  Enabled: true
+Performance/BlockGivenWithExplicitBlock: # new in 1.9
+  Enabled: true
+Performance/CollectionLiteralInLoop: # new in 1.8
+  Enabled: true
+Performance/ConcurrentMonotonicTime: # new in 1.12
+  Enabled: true
+Performance/ConstantRegexp: # new in 1.9
+  Enabled: true
+Performance/MapCompact: # new in 1.11
+  Enabled: true
+Performance/MapMethodChain: # new in 1.19
+  Enabled: true
+Performance/MethodObjectAsBlock: # new in 1.9
+  Enabled: true
+Performance/RedundantEqualityComparisonBlock: # new in 1.10
+  Enabled: true
+Performance/RedundantSortBlock: # new in 1.7
+  Enabled: true
+Performance/RedundantSplitRegexpArgument: # new in 1.10
+  Enabled: true
+Performance/RedundantStringChars: # new in 1.7
+  Enabled: true
+Performance/ReverseFirst: # new in 1.7
+  Enabled: true
+Performance/SortReverse: # new in 1.7
+  Enabled: true
+Performance/Squeeze: # new in 1.7
+  Enabled: true
+Performance/StringIdentifierArgument: # new in 1.13
+  Enabled: true
+Performance/StringInclude: # new in 1.7
+  Enabled: true
+Performance/Sum: # new in 1.8
   Enabled: true
