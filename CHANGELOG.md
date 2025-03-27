@@ -1,3 +1,9 @@
+## Version 7.1.0 (2025-03-27)
+
+* Upgrade `rubocop-rspec` to `3.5.x`
+* We removed `Capypara` and `Factorybot` cops
+* Included `rubocop-rspec_rails` gem and added as required
+
 ## Version 7.0.0 (2024-06-14)
 
 * No longer suggest rubocop-factory_bot
