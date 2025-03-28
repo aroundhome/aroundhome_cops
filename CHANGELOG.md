@@ -1,8 +1,10 @@
-## Version 7.1.0 (2025-03-27)
+## Version 8.0.0 (2025-03-28)
 
 * Upgrade `rubocop-rspec` to `3.5.x`
 * We removed `Capypara` and `Factorybot` cops
 * Included `rubocop-rspec_rails` gem and added as required
+* Removed all `RSpecRails` cops
+* Migrated from `required` to `plugins`
 
 ## Version 7.0.0 (2024-06-14)
 

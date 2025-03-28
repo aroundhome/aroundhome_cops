@@ -1,8 +1,7 @@
-require:
+plugins:
   - rubocop-performance
   - rubocop-rspec
   - rubocop-rake
-  - rubocop-rspec_rails
 
 AllCops:
   Exclude:
@@ -413,8 +412,6 @@ RSpec/ExcessiveDocstringSpacing: # (new in 2.5)
   Enabled: true
 RSpec/IdenticalEqualityAssertion: # (new in 2.4)
   Enabled: true
-RSpecRails/AvoidSetupHook: # (new in 2.4)
-  Enabled: true
 RSpec/SubjectDeclaration: # (new in 2.5)
   Enabled: true
 RSpec/BeEq: # new in 2.9.0
@@ -424,8 +421,6 @@ RSpec/BeNil: # new in 2.9.0
 RSpec/ChangeByZero: # new in 2.11.0
   Enabled: true
 RSpec/VerifiedDoubleReference: # new in 2.10.0
-  Enabled: true
-RSpecRails/HaveHttpStatus: # new in 2.12
   Enabled: true
 RSpec/RedundantPredicateMatcher: # new in 2.26
   Enabled: true
@@ -470,14 +465,6 @@ RSpec/PendingWithoutReason: # new in 2.16
 RSpec/ReceiveMessages: # new in 2.23
   Enabled: true
 RSpec/RedundantAround: # new in 2.19
-  Enabled: true
-RSpecRails/InferredSpecType: # new in 2.14
-  Enabled: true
-RSpecRails/MinitestAssertions: # new in 2.17
-  Enabled: true
-RSpecRails/NegationBeValid: # new in 2.23
-  Enabled: true
-RSpecRails/TravelAround: # new in 2.19
   Enabled: true
 RSpec/ExpectInLet: # new in 2.30
   Enabled: true
