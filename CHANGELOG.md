@@ -1,3 +1,7 @@
+## Version 7.0.1 (2025-03-31)
+
+* Fix incompatibility with more recent versions of rubocop-rspec
+
 ## Version 7.0.0 (2024-06-14)
 
 * No longer suggest rubocop-factory_bot
