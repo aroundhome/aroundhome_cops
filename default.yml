@@ -2,6 +2,7 @@ plugins:
   - rubocop-performance
   - rubocop-rspec
   - rubocop-rake
+  - rubocop-factory_bot
 
 AllCops:
   Exclude:
@@ -507,4 +508,22 @@ Performance/StringIdentifierArgument: # new in 1.13
 Performance/StringInclude: # new in 1.7
   Enabled: true
 Performance/Sum: # new in 1.8
+  Enabled: true
+
+# ----------------- FactoryBot forced enablements --------------
+FactoryBot/SyntaxMethods: # new in 2.7
+  Enabled: true
+FactoryBot/AssociationStyle: # new in 2.23
+  Enabled: true
+FactoryBot/ConsistentParenthesesStyle: # new in 2.14
+  Enabled: true
+FactoryBot/ExcessiveCreateList: # new in 2.25
+  Enabled: true
+FactoryBot/FactoryAssociationWithStrategy: # new in 2.23
+  Enabled: true
+FactoryBot/FactoryNameStyle: # new in 2.16
+  Enabled: true
+FactoryBot/IdSequence: # new in 2.24
+  Enabled: true
+FactoryBot/RedundantFactoryOption: # new in 2.23
   Enabled: true
