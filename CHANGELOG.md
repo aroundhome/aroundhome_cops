@@ -1,3 +1,11 @@
+## Version 8.0.0 (2025-04-01)
+
+* Upgrade `rubocop-rspec` to `3.5.x`
+* We removed `Capypara` cop
+* Removed all `RSpecRails` cops
+* Migrated from `required` to `plugins`
+* This Major release is not an April fools joke
+
 ## Version 7.0.1 (2025-03-31)
 
 * Fix incompatibility with more recent versions of rubocop-rspec
